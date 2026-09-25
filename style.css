@@ -1,0 +1,157 @@
+/* Basic page setup */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f5f7;
+    color: #333;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Main container */
+
+.container {
+    width: 90%;
+    max-width: 450px;
+
+    text-align: center;
+}
+
+
+/* Heading */
+
+h1 {
+    color: #294c60;
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+/* Calculator box */
+
+.calculator {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+
+    text-align: left;
+}
+
+
+/* Labels */
+
+label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #294c60;
+
+    font-weight: bold;
+}
+
+
+/* Input fields */
+
+input {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+/* Input focus */
+
+input:focus {
+    outline: none;
+
+    border-color: #294c60;
+}
+
+
+/* Button */
+
+button {
+    width: 100%;
+
+    padding: 13px;
+
+    background-color: #294c60;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e3949;
+}
+
+
+/* Result */
+
+#result {
+    margin-top: 25px;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* Mobile responsive design */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .calculator {
+        padding: 25px 20px;
+    }
+
+    input {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
